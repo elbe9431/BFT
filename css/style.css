@@ -1,0 +1,1238 @@
+﻿/**
+ * paartherapietest :: General CSS for test layout
+ *
+ * @version 1.0
+ * @package paartherapietest
+ * @author Carsten Heine <carstenheine@gmx.de>
+ * @copyright 2010 Carsten Heine. All rights reserved.
+ */
+
+/**
+ * Simple css reset
+ */
+
+* {
+    margin: 0; padding: 0; vertical-align: baseline;
+}
+
+input, select, label, th, td {
+    vertical-align: middle;
+}
+
+hr {
+    display: block; height: 1px; border: 0; margin: 1em auto; padding: 0;
+}
+
+table {
+    border-collapse: collapse; border-spacing: 0; /* cellspacing="0" */
+}
+
+/**
+ * General settings
+ */
+
+html {
+    background: #d0effc;
+}
+
+body {
+    font: 87.5%/1.429 arial, helvetica, sans-serif; /* 14px/20px */
+    color: #333; text-align: center;
+    background: #d0effc url("../../paartherapietest/images/bg-body.png") repeat-x 0 3em;
+}
+
+select, input, textarea {
+    font: 1em/1.429 arial, helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    margin-bottom: .8em; font-weight: bold; color: #222;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 20px; line-height: 26px;
+}
+
+h3 {
+    font-size: 17px; line-height: 22px;
+}
+
+h4 {
+    font-size: 1.077em;
+}
+
+a {
+    color: #06c; text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+strong {
+    color: #222;
+}
+
+pre {
+    font-size: 14px; line-height: 18px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ol li {
+    margin-left: 2em;
+}
+
+ul li {
+    margin-left: 1em;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: ''; content: none;
+}
+
+/**
+ * Layout elements
+ */
+
+html, body {
+    height: 100%;
+}
+
+#spacer {
+    width: 1px; height: 50%; margin-bottom: -22em; float: left;
+}
+
+#header-wrapper {
+    height: 3em; background: #111 url("../../paartherapietest/images/bg-header.png") repeat-x 0 0;
+    border-bottom: 1px solid #fff;
+}
+
+#header {
+    margin: 0 auto; width: 64em; height: 3em; padding: 0 1.5em; 
+    text-align: left; background: #111 url("../../paartherapietest/images/bg-header.png") repeat-x 0 0;
+    border-bottom: 1px solid #fff;
+}
+
+#box-wrapper {
+    clear: left; margin: 0 auto; width: 65em; height: 37em; padding: 1em;
+}
+
+#box {
+    position: relative; width: 62em; height: 33em; padding: 1.5em;
+    text-align: left; border: 1px solid #91a6af;
+    background: #ddeef6 url("../../paartherapietest/images/bg-box.png") repeat-x 0 0;
+    -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;
+    -webkit-box-shadow: 0 2px 6px #8fbacc; -moz-box-shadow: 0 2px 6px #8fbacc;
+    box-shadow: 0 2px 6px #8fbacc;
+}
+
+#debug {
+    padding: 2em; text-align: left; border-top: 1px solid #91a6af;
+    background: #fff url("../../paartherapietest/images/bg-info.png") repeat-x 0 1px;
+}
+
+#reset {
+    position: absolute; left: 0; top: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.top2 {
+    margin-top: 2em;
+}
+
+.bottom1 {
+    margin-bottom: 1em;
+}
+
+.bottom2 {
+    margin-bottom: 2em;
+}
+
+.bottom4 {
+    margin-bottom: 4em;
+}
+
+/**
+ * Header
+ */
+
+#header h1 {
+    font-size: 1em; line-height: 2.871; color: #fff;
+    padding-left: 3em; background: url("../../paartherapietest/images/group.png") no-repeat 0 center;
+}
+
+#header p {
+    float: right; width: 19em; line-height: 3; color: #bbb;
+    padding-left: 2.1em; background: url("../../paartherapietest/images/nav.png") no-repeat 0 center;
+}
+
+#header a {
+    float: right; width: 2.9em; line-height: 3; color: #bbb;
+    text-decoration: none; padding-left: 1.8em; margin-right: 2em;
+    background: url("../../paartherapietest/images/back.png") no-repeat 0 center;
+}
+
+#header a:hover {
+    color: #fff; background: url("../../paartherapietest/images/back.png") no-repeat -100px center;
+}
+
+#header a.logout {
+    background: url("../../paartherapietest/images/logout.png") no-repeat 0 center; width: 3.3em;
+}
+
+#header a.logout:hover {
+    background: url("../../paartherapietest/images/logout.png") no-repeat -100px center;
+}
+
+#header a.home {
+    background: url("../../paartherapietest/images/home.png") no-repeat 0 center;
+}
+
+#header a.home:hover {
+    background: url("../../paartherapietest/images/home.png") no-repeat -100px center;
+}
+
+/**
+ * Buttons
+ */
+ 
+.submit {
+    margin-right: 1em; width: 9em; height: 2.6em; line-height: 2.6;
+    color: #fff; font-weight: bold; text-shadow: 0 1px 2px #131;
+    background: #4d7e03 url("../../paartherapietest/images/button.png") repeat-x 0 0;
+    cursor: pointer; border: 1px solid #4d7e03;
+    -webkit-border-radius: 2em; -moz-border-radius: 2em; border-radius: 2em;
+}
+
+.submit:hover {
+    background: #6E9A08 url("../../paartherapietest/images/button.png") repeat-x 0 -100px;
+}
+
+.submit.yellow {
+    border-color: #848100; text-shadow: 0 1px 2px #220;
+    background: #848100 url("../../paartherapietest/images/button-yellow.png") repeat-x 0 0;
+}
+
+.submit.red {
+    border-color: #DF0101; text-shadow: 0 1px 2px #220;
+    background: #DF0101  repeat-x 0 0;
+	width: 12em;
+}
+
+.submit.yellow:hover {
+    background: #A18E02 url("../../paartherapietest/images/button-yellow.png") repeat-x 0 -100px;
+}
+
+.submit.orange {
+    border-color: #E27001; text-shadow: 0 1px 2px #310;
+    background: #E27001 url("../../paartherapietest/images/button-orange.png") repeat-x 0 0;
+}
+
+.submit.orange:hover {
+    background: #FF941B url("../../paartherapietest/images/button-orange.png") repeat-x 0 -100px;
+}
+    
+.disabled {
+    width: 8em; height: 2.6em; line-height: 2.6; color: #666;
+    text-align: center; font-weight: bold;
+    background: #ddd; border: 1px solid #888;
+    -webkit-border-radius: 2em; -moz-border-radius: 2em; border-radius: 2em;
+}
+
+.buttonexample {
+    float: left; margin: 1em 1em 0 0; font-size: 0.857em; text-align: center;
+    width: 7em; height: 2.4em; line-height: 2.4;
+    color: #fff; font-weight: bold; text-shadow: 0 1px 2px #111;
+    background: #4A4A4A url("../../paartherapietest/images/button-grey.png") repeat-x 0 0;
+    border: 1px solid #4A4A4A;
+    -webkit-border-radius: 2em; -moz-border-radius: 2em; border-radius: 2em;
+}
+
+/**
+ * Links with button style
+ */
+ 
+a.green {
+    margin-right: 1em; width: 8em; height: 2.6em; line-height: 2.6;
+    color: #fff; font-weight: bold; text-shadow: 0 1px 2px #131;
+    background: #4d7e03 url("../../paartherapietest/images/button.png") repeat-x 0 0;
+    display: inline-block; border: 1px solid #4d7e03; text-align: center;
+    -webkit-border-radius: 2em; -moz-border-radius: 2em; border-radius: 2em;
+}
+
+a.green:hover {
+    background: #6E9A08 url("../../paartherapietest/images/button.png") repeat-x 0 -100px;
+    text-decoration: none;
+}
+
+a.orange {
+    margin-right: 1em; width: 8em; height: 2.6em; line-height: 2.6;
+    color: #fff; font-weight: bold; text-shadow: 0 1px 2px #310;
+    background: #E27001 url("../../paartherapietest/images/button-orange.png") repeat-x 0 0;
+    display: inline-block; border: 1px solid #E27001; text-align: center;
+    -webkit-border-radius: 2em; -moz-border-radius: 2em; border-radius: 2em;
+}
+
+a.orange:hover {
+    background: #FF941B url("../../paartherapietest/images/button-orange.png") repeat-x 0 -100px;
+    text-decoration: none;
+}
+
+/**
+ * Tooltips
+ */
+ 
+div.hastooltip {
+    cursor: help;
+}
+
+div.hastooltip:hover {
+    background: #fff;
+}
+
+.tooltip {
+    font-size: 0.929em; line-height: 1.385; padding: .5em .6em; width: 17em;
+    font-weight: normal; opacity: 0.95; color: #eee;
+	background-color: #222;	border: 1px solid #000;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+    background-color: #FFFFAA; border: 1px solid #FFAD33; color: #222; opacity: 1;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip-arrow {
+    position: absolute; top: -7px; left: 48px; width: 13px; height: 7px;
+    background: url("../../paartherapietest/images/tooltip-arrow-up.png") no-repeat;
+    background: url("../../paartherapietest/images/tooltip-arrow-up2.png") no-repeat;
+}
+
+.tooltip.top .tooltip-arrow {
+    top: auto !important; bottom: -7px;
+    background: url("../../paartherapietest/images/tooltip-arrow-down.png") no-repeat;
+    background: url("../../paartherapietest/images/tooltip-arrow-down2.png") no-repeat;
+}
+
+.tooltip.left {
+    margin-left: 264px;
+}
+
+.tooltip.left .tooltip-arrow {
+    left: auto !important; right: 48px;
+}
+
+/**
+ * Startpage
+ */
+ 
+#teaser {
+    margin: 0 auto; width: 64em; padding: 3em 1.5em; text-align: left;
+}
+
+#teaser h2 {
+    width: 8em; font-size: 3.143em; line-height: 1.068; text-shadow: 1px 1px 1px #fff;
+    margin-bottom: 0.5em; color: #333;
+}
+
+#teaser p {
+    width: 24em; font-size: 1.143em; line-height: 1.375; margin-bottom: 1.6em;
+}
+
+#teaser img {
+    float: right;
+}
+
+#teaser .green {
+    font-size: 1.571em; line-height: 2.3em; width: 8em; height: 2.3em;
+    background: #4d7e03 url("../../paartherapietest/images/button-big.png") repeat-x 0 0;
+}
+
+#teaser .green:hover {
+    background: #6E9A08 url("../../paartherapietest/images/button-big.png") repeat-x 0 -100px;
+}
+
+#teaser .orange {
+    font-size: 1.571em; line-height: 2.3em; width: 8em; height: 2.3em;
+    background: #E27001 url("../../paartherapietest/images/button-orange-big.png") repeat-x 0 0;
+}
+
+#teaser .orange:hover {
+    background: #FF941B url("../../paartherapietest/images/button-orange-big.png") repeat-x 0 -100px;
+}
+
+#info-wrapper {
+    border-top: 1px solid #91a6af; min-height: 320px;
+    background: #fff url("../../paartherapietest/images/bg-info.png") repeat-x 0 1px;
+}
+
+#info {
+    margin: 0 auto; width: 64em; padding: 3em 1.5em; text-align: left;
+    background: #fff url("../../paartherapietest/images/bg-info.png") repeat-x 0 1px;
+}
+
+#info .col-left {
+    float: left; width: 30em;
+}
+
+#info .col-right {
+    float: right; width: 30em;
+}
+
+#info ul {
+    list-style-type: none;
+}
+
+#info li {
+    margin: 0; padding: 0; padding-left: 80px; margin-bottom: 2em; 
+}
+
+#info li img {
+    float: left; margin-left: -80px; width: 80px; height: 80;
+}
+
+#info li h3 {
+    font-size: 16px; line-height: 20px; margin-bottom: 5px;
+}
+
+#copyright-start {
+    border-top: 1px solid #aaa; background: #222; color: #888; padding: .5em 0;
+    height: 5em;
+}
+
+#copyright-start a {
+    color: #888;
+}
+
+/**
+ * Impressum
+ */
+ 
+.impressum {
+    margin: 4em auto; width: 64em; padding: 3em 1.5em; text-align: left;
+}
+
+.impressum span {
+    display: block; margin-left: 2em;
+}
+
+/**
+ * Text layout
+ */
+ 
+.text form, .textpapierkorb form, .text3 form, .text4 form, .phase2email form,
+.logingruppenid form, .loginkennwort form, .info form {
+    text-align: center;
+}
+
+
+/**
+ * [&Atilde;&#8222;nderung Uwe 13.01.13 wegen Feedbackformular]
+ * Feedback layout
+  */
+ 
+ .feedback form, p, h3{
+	 text-align:center
+ }
+ .feedback textarea{
+ 	width:450px;
+	height:160px;
+	padding:5px;
+ }
+
+.logingruppenid p.error, .loginkennwort p.error {
+    margin-top: 1em; margin-left: 11em;
+}
+
+.text-box {
+    margin: 0 auto 2em; width: 36em; height: 22em; padding: 1.5em;
+    text-align: left; background: #edfeff; border: 1px solid #91a6af;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+    overflow: hidden;
+}
+
+.preview-box {
+    margin: 0 auto 2em; width: 48em; height: 24em; padding: 1.5em;
+    text-align: left; background: #edfeff; border: 1px solid #91a6af;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+    overflow: hidden;
+}
+
+.preview-box a {
+    float: left;
+}
+
+.preview-box h3 {
+    margin-left: 16.471em;
+}
+
+.preview-box p {
+    margin-left: 20em;
+}
+
+.textpapierkorb .papierkorb {
+    font-size: 0.929em; line-height: 1.308; border: 1px solid #91a6af;
+    position: absolute; top: 17.8em; left: 57.5em; text-align: center;
+    padding: 0.462em; width: 9.846em; height: 9.846em;
+    background: #edfeff url("../../paartherapietest/images/trashbin.png") no-repeat center center;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+    position: absolute;
+}
+
+/**
+ * Headline layout
+ */
+ 
+.headline form {
+    text-align: center;
+}
+
+.headline-box {
+    margin: 0 auto 2em; width: 36em; height: 18em; padding: 5.5em 1.5em 1.5em;
+    text-align: center; background: #edfeff; border: 1px solid #91a6af;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+}
+
+.headline-box h2 {
+    font-size: 2em;
+}
+.headline-box p {
+    height: 9em;
+}
+
+.headline-box p.copyr {
+    margin: 0; height: 5em; font-size: 0.714em;
+}
+
+/**
+ * Copyright with iframe layout
+ */
+
+.copyright form, .copyright2 form, .copyright3 form {
+    text-align: center;
+}
+
+iframe {
+    display: block; margin: 0 auto 2em; width: 39em; height: 23em;
+    border: 1px solid #91a6af;
+}
+
+.copyright p, .copyright2 p, .copyright3 p {
+    width: 39em; margin: 0 auto 1.5em;
+}
+
+.copyright .submit, .copyright2 .submit, .copyright3 .submit {
+    margin-right: 5em;
+}
+
+.copyright .submit.orange, .copyright2 .submit.orange, .copyright3 .submit.orange {
+    margin-right: 0;
+}
+
+/**
+ * Login pages
+ */
+ 
+.login-right {
+    position: relative; margin-left: 36em; width: 21em; height: 31em;
+    padding: 1em 1em 1em 3em; border-left: 1px dotted #91a6af;
+}
+
+.login-left {
+    float: left; position: relative; width: 32em; padding: 1em 3em 1em 1em;
+}
+
+.login {
+    position: absolute; left: 3em; top: 26em;
+}
+
+.register {
+    position: absolute; left: -35em; top: 18em;
+}
+
+.loginauswahl h2 {
+    margin-bottom: 2em;
+}
+
+.loginauswahl p {
+    height: 5.714em;
+}
+
+.loginauswahl .link {
+    font-size: 0.857em; line-height: 1.333; border: none; background: none;
+    margin: 0; padding: 0; color: #06c; cursor: pointer;
+    border-bottom: 1px solid #DDEEF6;
+}
+
+.loginauswahl .link:hover {
+    border-bottom: 1px solid #06c;
+}
+
+.loginauswahl .error {
+    color: #8B2323;
+}
+
+.input {
+    line-height: 1; width: 100%; padding: 0.357em; color: #000;
+    border: 1px solid #999; background: #fff;
+    -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+}
+
+.input:focus {
+    border-color: #333;
+}
+
+.logingruppenwahl form {
+    margin-left: 1em;
+}
+
+.logingruppenwahl label {
+    display: inline-block; margin-left: 0.5em; width: 50em;
+}
+
+.logingruppenwahl .error, .phase2email .error {
+    color: #8B2323;
+}
+
+.phase2email .input {
+    width: 20em;
+}
+
+.phase2email label {
+    display: inline-block; width: 6em;
+}
+
+.loginanmelden .radiobox {
+    display: inline-block; width: 18.857em;
+}
+
+.loginanmelden label.radio {
+    width: 5em;
+}
+
+.loginanmelden .description, .logingruppenid .description, .loginpwd .description, .phase2email .description, .loginkennwort .description {
+    margin-left: 1em; font-size: 0.857em; line-height: 1.333;
+    font-style: italic; color: #567;
+}
+
+.loginanmelden .error, .logingruppenid .error, .loginpwd .error, .loginkennwort .error {
+    margin-left: .857em; color: #8B2323;
+}
+
+.loginpwd .longerror {
+    margin-top: .857em; color: #8B2323;
+}
+
+.loginmenu form {
+    text-align: center;
+}
+
+.loginmenu h3 {
+    margin-bottom: 2em;
+}
+
+.loginmenu p {
+    text-align: left;
+}
+
+.loginmenu .disabled {
+    display: inline-block;
+}
+
+.loginmenu .box-modul1 {
+    float: left; width: 27em; height: 27em; padding: 1.5em;
+    text-align: center; background: #edfeff; border: 1px solid #91a6af;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+}
+
+.loginmenu .box-modul1 p {
+    min-height: 7em;
+}
+
+.loginmenu .box-modul1 input {
+    width: 11em;
+}
+
+.loginmenu a.buttonlink {
+    display: inline-block;
+    margin-right: 1em; width: 11em; height: 2.6em; line-height: 2.6;
+    color: #fff; font-weight: bold; text-shadow: 0 1px 2px #131;
+    background: #4d7e03 url("../../paartherapietest/images/button.png") repeat-x 0 0;
+    cursor: pointer; border: 1px solid #4d7e03;
+    -webkit-border-radius: 2em; -moz-border-radius: 2em; border-radius: 2em;
+}
+
+.loginmenu a.buttonlink:hover {
+    background: #6E9A08 url("../../paartherapietest/images/button.png") repeat-x 0 -100px;
+    text-decoration: none;
+}
+
+.loginmenu .box-modul2 {
+    float: right; width: 27em; height: 27em; padding: 1.5em;
+    text-align: left; background: #edfeff; border: 1px solid #91a6af;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+}
+
+.loginmenu .box-modul2 h3 {
+    margin: 0 auto 2em; text-align: center;
+}
+
+.loginmenu .box-modul2 p {
+    margin-bottom: 0.5em;
+}
+
+.loginmenu .box-modul2 .link {
+    font-size: 1em; line-height: 1.333; border: none; background: none;
+    margin: -0.143em 0 1em 0; padding: 0; color: #06c; cursor: pointer;
+    border-bottom: 1px solid #EDFEFF;
+}
+
+.loginmenu .box-modul2 .link:hover {
+    border-bottom: 1px solid #06c;
+}
+
+/**
+ * Modul 1 - Phase 1
+ */
+
+.p1-main {
+    margin-left: 16em; height: 31em; padding: 1em 0 1em 2em;
+    border-left: 1px dotted #91a6af;
+}
+
+.p1-left {
+    float: left; width: 16.333em; margin-left: -21em; text-align: right;
+    font-size: 0.857em; line-height: 1.333; font-style: italic; color: #567;
+}
+
+.table-wrapper {
+    margin-bottom: 2em;
+}
+
+.cell-wrapper {
+    float: left; width: 18.571em; background: #edfeff; 
+}
+
+.b1t {
+    border-top: 1px solid #91a6af;
+}
+
+.b1r {
+    border-right: 1px solid #91a6af;
+}
+
+.b1b {
+    border-bottom: 1px solid #91a6af;
+}
+
+.b1l {
+    border-left: 1px solid #91a6af;
+}
+
+.b2t {
+    border-top: 1px solid #b2bebf;
+}
+
+.b2r {
+    border-right: 1px solid #b2bebf;
+}
+
+.ct {
+    -webkit-border-radius: 5px 5px 0 0; -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.cb {
+    -webkit-border-radius: 0 0 5px 5px; -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+.ctl {
+    -webkit-border-radius: 5px 0 0 0; -moz-border-radius: 5px 0 0 0;
+    border-radius: 5px 0 0 0;
+}
+
+.ctr {
+    -webkit-border-radius: 0 5px 0 0; -moz-border-radius: 0 5px 0 0;
+    border-radius: 0 5px 0 0;
+}
+
+.cbr {
+    -webkit-border-radius: 0 0 5px 0; -moz-border-radius: 0 0 5px 0;
+    border-radius: 0 0 5px 0;
+}
+
+.cbl {
+    -webkit-border-radius: 0 0 0 5px; -moz-border-radius: 0 0 0 5px;
+    border-radius: 0 0 0 5px;
+}
+
+.phase1einstimmung h3 {
+    margin-bottom: 1.2em;
+}
+
+.phase1einstimmung .table-wrapper {
+    width: 37.143em; background: #edfeff; border: 1px solid #91a6af;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+}
+
+.phase1einstimmung td {
+    width: 35.143em; height: 6em; padding: 0 1em; 
+}
+
+.phase1frage .table-wrapper {
+    margin-bottom: 2em;
+}
+
+.phase1frage table {
+    font-size: 0.929em; line-height: 1.385; width: 20em; height: 3.154em; 
+}
+
+.phase1frage td {
+    padding: 0 1em;
+}
+
+.phase1retten h3 {
+    width: 30em;
+}
+
+.phase1retten .bisher {
+    margin-top: -3.7em;
+}
+
+.phase1retten .extrawide {
+    margin-bottom: 1.75em; margin-right: 2em; width: 20.667em; height: 3em; 
+    font-size: 0.857em; line-height: 1.25;
+    overflow: hidden; white-space: normal;
+}
+
+.phase1retten .extrawidebig {
+    margin-bottom: 2em; width: 18.571em; height: 2.7em; line-height: 2.5;
+}
+
+.p1-result {
+    position: relative; margin-bottom: 2em; height: 29.857em; padding: 1.5em;
+    text-align: left; background: #edfeff; border: 1px solid #91a6af;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+    overflow: hidden;
+}
+
+.p1-result-left {
+    float: left; width: 27.5em; height: 29.857em; padding-right: 1.5em;
+    border-right: 1px dotted #91a6af;
+}
+
+.p1-result-right {
+    float: right; width: 28em;
+}
+
+.p1-result .submit {
+    position: absolute; margin: 0; bottom: 2em; right: 12em;
+}
+
+.p1-table-left {
+    float: left; width: 29em;
+}
+
+.p1-table-left .error {
+    margin-top: 1.5em; padding: 1em;
+    background: #ffccaa; border: 1px solid #ff3333; color: #8B2323;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+}
+
+.phase1table .submit {
+    position: absolute; margin: 0; left: 28.5em; bottom: 3.5em;
+}
+
+/**
+ * Checkboxes
+ */
+ 
+.checkboxes {
+    float: right; position: relative; overflow: hidden;
+}
+
+.checkboxes div {
+    position: relative;
+}
+
+.checkboxes input {
+	float: left; position: absolute; left: .8em; top: .8em; opacity: 0;
+}
+
+.checkboxes label {
+    display: inline-block; width: 26.5em; height: 2.4em; line-height: 2.4;
+    background: #edfeff; padding: 0 1em 0 2.5em;
+    border-left: 1px solid #91a6af; border-right: 1px solid #91a6af;
+}
+
+.checkboxes label:hover {
+    background-color: #fff;
+}
+
+.checkboxes div:not(#foo) > input + label {
+    background: #edfeff url("../../paartherapietest/images/checkbox.png") no-repeat 7px 7px;
+}
+
+.checkboxes div:not(#foo) > input:checked + label {
+    background-position: 7px -93px; text-decoration: line-through; color: #d00;
+}
+
+.checkboxes div:not(#foo) > input + label:hover {
+    background-color: #fff;
+}
+
+/**
+ * Modul 1 - Phase 2
+ */
+ 
+#sortable-background, #sortable {
+    position: absolute; font-size: 0.929em; line-height: 1.308;
+    margin: 0; padding: 0; left: 36.077em; top: 4.462em;
+}
+
+#sortable {
+    width: 16.308em; height: 29.846em; list-style-type: none;
+}
+
+#sortable-background li, #sortable li {
+    margin-left: 0.001em; margin-bottom: 0.154em;
+    padding: 0.231em 0.385em; width: 15.385em; height: 5.231em;
+    border: 1px solid #888;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+}
+
+#sortable-background li {
+    background: #ddd;
+}
+
+#sortable-background li.ui-state-highlight, #sortable li.ui-state-highlight {
+    background: #ffd;
+}
+
+.sortable-dest {
+    margin: 0; padding: 0; position: absolute; list-style-type: none;
+    font-size: 0.929em; line-height: 1.308; width: 13.231em; height: 7.231em;
+}
+
+.sortable-item {
+    margin: 0; padding: 0.231em 0.385em; width: 12.308em; height: 6.615em; 
+    cursor: move; border: 1px solid #888; background: #fff;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+}
+
+.draggable {
+    position: absolute; font-size: 0.929em; line-height: 1.308;
+    margin: 0; padding: 0.231em 0.385em; width: 12.308em; height: 6.615em; 
+    cursor: move!important; border: 1px solid #888; background: #fff;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+}
+
+.ui-draggable-disabled {
+    background: #ddd;
+}
+
+.droppable {
+    font-size: 0.929em; line-height: 1.308; border: 1px solid #91a6af;
+    position: absolute; top: 13.923em; left: 38.077em; text-align: center;
+    padding: 0.462em; width: 9.846em; height: 9.846em;
+    background: #edfeff url("../../paartherapietest/images/trashbin.png") no-repeat center center;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+}
+
+.droppable-hover {
+    background-color: #F5F5DC;
+}
+
+.droppable h4 {
+}
+
+.pos01, .pos03, .pos05, .pos07,
+.pos11, .pos13, .pos15, .pos17,
+.pos21, .pos23, .pos27, .pos28 {
+    left: 19.385em;
+}
+
+.pos02, .pos04, .pos06, .pos08,
+.pos12, .pos14, .pos16, .pos18,
+.pos22, .pos24, .pos29, .pos210 {
+    right: 1.615em;
+}
+
+.pos25, .pos26 {
+    left: 36.923em;
+}
+
+.pos35, .pos36 {
+    left: 28.385em;
+}
+
+.pos37, .pos38 {
+    left: 45.538em;
+}
+
+.pos01, .pos02 {
+    top: 6.769em;
+}
+
+.pos03, .pos04 {
+    top: 18.769em;
+}
+
+.pos11 {
+    top: 3.769em;
+}
+
+.pos12 {
+    top: 9.769em;
+}
+
+.pos13 {
+    top: 15.769em;
+}
+
+.pos14 {
+    top: 21.769em;
+}
+
+.pos15 {
+    top: 27.769em;
+}
+
+.pos25, .pos27, .pos29, .pos35, .pos37 {
+    top: 1.615em;
+}
+
+.pos26, .pos28, .pos210, .pos36, .pos38 {
+    bottom: 1.615em;
+}
+
+.pos21, .pos22 {
+    top: 11.077em;
+}
+
+.pos23, .pos24 {
+    top: 20.538em;
+}
+
+#sortable-description {
+    position: absolute; padding: 1em; width: 12.5em;
+    left: 1.5em; top: 1.5em; bottom: 1.5em;
+    text-align: left; background: #edfeff; border: 1px solid #91a6af;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+}
+
+#sortable-description h4, #sortable-description p {
+    text-align: left; margin-bottom: 1.5em;
+}
+
+
+/**
+ * Modul 2
+ */
+
+.phase3compare .compare-left {
+    float: left; width: 29.5em; text-align: center;
+}
+
+.phase3compare .compare-right {
+    float: right; width: 29.5em; text-align: center;
+}
+
+.phase3compare .compare-middle {
+    float: center; text-align: center;
+}
+
+.phase3compare .compare-box {
+    height: 22.143em; padding: 1.5em; margin-bottom: 1.5em; overflow: hidden;
+    text-align: center; background: #edfeff; border: 1px solid #91a6af;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+}
+
+.phase3compare .top {
+    margin-bottom: 0; color: #666;
+}
+
+.phase3compare .headline {
+    height: 2.588em;
+}
+
+.phase3compare .text {
+    text-align: left; height: 7.143em;
+}
+
+.phase3compare .handle {
+    position: relative; width: 12em; height: 1.571em;
+    padding: .143em 0 .143em 2.929em; margin: 0 auto -.071em auto;
+    border-top: 1px solid #91a6af; z-index: 90;
+    border-left: 1px solid #91a6af; border-right: 1px solid #91a6af;
+    background: #fff url("../../paartherapietest/images/killermouse.png") no-repeat .25em .1em;
+    -webkit-border-radius: 5px 5px 0 0; -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0; cursor: help;
+}
+
+.phase3compare .hinweise {
+    position: relative; height: 17.5em; text-align: justify; top: -22em;
+    margin: 0 -.5em; padding: 1em 1.5em; font-size: 0.929em; line-height: 1.385;
+    background: #fff; z-index: 80; border: 1px solid #91a6af;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+    display: none;
+}
+
+.phase3compare .oder {
+    position: absolute; top: 12em; left: 30.429em;
+    width: 4em; height: 4em; line-height: 4em;
+    text-align: center; background: #edfeff; border: 1px solid #91a6af;
+    -webkit-border-radius: 3em; -moz-border-radius: 3em; border-radius: 3em;
+    -webkit-box-shadow: 0 0 6px #8fbacc; -moz-box-shadow: 0 0 6px #8fbacc;
+    box-shadow: 0 0 6px #8fbacc;
+}
+
+/**
+ * Tables
+ */
+ 
+.table form { text-align: center; }
+
+.table table { width: 100%; margin: 0 auto 1.5em; font-size: 0.929em; line-height: 1.308; }
+
+.table th {
+    padding: 3px 5px; text-align: left; background: #222; color: #eee; vertical-align: top;
+    border-right: 1px solid #ddeef6; border-bottom: 1px solid #ddeef6;
+}
+
+.table td {
+    padding: 3px 5px; text-align: left; background: #edfeff; color: #456; vertical-align: top;
+    border-right: 1px solid #ddeef6; border-bottom: 1px solid #ddeef6;
+}
+
+.table td strong { color: #222; }
+
+/**
+ * Save
+ */
+
+.save form { text-align: center; }
+
+p.saveerror { display: inline; color: #8B2323; }
+
+div.savecontainer { margin: 3em 0; }
+
+/**
+ * Print
+ */
+ 
+.print form { text-align: center; }
+
+#printer { display: none; }
+
+/**
+ * Bezahlen
+ */
+
+.loginbez p {
+    width: 40em; float: right; margin-right: 2em;
+}
+
+.loginbez h3 {
+    text-align: center;
+}
+
+.bez_paypal {
+    position: absolute; top: 5em; left: 2em; width: 60em;
+}
+
+.bez_paypal .paypal-button {
+    width: 16em; text-align: right;
+}
+
+.bez_lastschrift {
+    position: absolute; top: 10.5em; left: 2em; width: 60em;
+}
+
+.bez_lastschrift a {
+    display: block; width: 16em; text-align: right;
+}
+
+.bez_onlineueberw {
+    position: absolute; top: 16em; left: 2em; width: 60em;
+}
+
+.bez_onlineueberw a {
+    display: block; width: 16em; text-align: right;
+}
+
+.bez_ueberw {
+    position: absolute; top: 21.5em; left: 2em; width: 60em;
+}
+
+.bez_ueberw .ueberw-button {
+    width: 16em; text-align: right;
+}
+
+.bez_ueberw .ueberw-button input {
+    margin-right: .5em;
+}
+
+.bez_back {
+    position: absolute; float: none; top: 31em; left: 30em;
+}
+
+/**
+ * Slimbox thumb
+ */
+ 
+a img {
+    padding: .5em; border: 1px solid #bbb;
+}
+
+/**
+ * Check for Javascript
+ */
+ 
+.js-box {
+    text-align: center;
+}
+
+.js-box p {
+    margin-bottom: 1em; height: auto;
+}
+
+ .js .js-box {
+    display: none;
+}
+
+.no-js .content-box {
+    display: none;
+}
+
+.impressumtest form {
+    text-align: center;
+}
+
+textarea {
+    wrap: virtual; resize: none; display: block; margin: 0 auto 2em;
+    width: 39em; height: 23em; border: 1px solid #91a6af;
+}
+

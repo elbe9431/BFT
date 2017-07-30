@@ -1,0 +1,297 @@
+﻿/**
+ * Berufsfindungstest :: CSS for home page, start page and sub pages
+ *
+ * @version 1.0
+ * @package Berufsfindungstest
+ * @author Carsten Heine <carstenheine@gmx.de>
+ * @copyright 2010 Carsten Heine. All rights reserved.
+ */
+
+* {
+    margin: 0; padding: 0; vertical-align: baseline;
+}
+
+input, select, label, th, td {
+    vertical-align: middle;
+}
+
+hr {
+    display: block; height: 1px; border: 0; margin: 1em auto; padding: 0;
+}
+
+table {
+    border-collapse: collapse; border-spacing: 0; /* cellspacing="0" */
+}
+
+a img {
+    border: none;
+}
+
+/**
+ * General settings
+ */
+
+body {
+    font: 87.5%/1.429 arial, helvetica, sans-serif; /* 14px/20px */
+    color: #333; text-align: center;
+    background: #dadbd3;
+}
+
+select, input, textarea {
+    font: 1em/1.429 arial, helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    margin-bottom: .8em; font-weight: bold; color: #222;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 20px; line-height: 26px;
+}
+
+h3 {
+    font-size: 17px; line-height: 22px;
+}
+
+h4 {
+    font-size: 1.077em;
+}
+
+a {
+    color: #06c; text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+strong {
+    color: #222;
+}
+
+pre {
+    font-size: 14px; line-height: 18px;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ol li {
+    margin-left: 2em;
+}
+
+ul li {
+    margin-left: 1em;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: ''; content: none;
+}
+
+/**
+ * Layout elements
+ */
+
+#wrapper {
+    padding: 1.5em; margin: 1em auto; width: 68em; text-align: left;
+    background: #fee662 url(../images/bg-body.png) repeat-x 0 0;
+    border: 1px solid #91a6af;
+    -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;
+    -webkit-box-shadow: 0 2px 6px #8fbacc; -moz-box-shadow: 0 2px 6px #8fbacc;
+    box-shadow: 0 2px 6px #8fbacc;
+}
+
+#header {
+}
+
+.berufsziele-logo {
+    float: right; margin: 0 .5em 2em 1em;
+}
+
+.berufsziele-text {
+    font-size: 0.929em; float: right; text-align: right; margin-top: .4em;
+}
+
+.bft-logo {
+    float: left; margin: 1em 1em 0 .5em;
+}
+
+.bft-text {
+    float: left; margin: 0.5em 0 0;
+}
+
+.bft-text h1 {
+    margin: 0; text-shadow: 1px 1px 1px #fff; font-size: 2.429em;
+}
+
+.bft-text p {
+    margin: 0; font-weight: bold;
+}
+
+#nav {
+    padding: .5em 0 0; margin: 0 0 -1px; clear: both;
+}
+
+#nav ul {
+    padding: 0; margin: 0 2em;
+}
+
+#nav li {
+    list-style: none; display: inline; padding: 0; margin: 0;
+}
+
+#nav li a {
+    display: inline-block; padding: .4em .6em; 
+    background: #E7EAEA url("../../paartherapietest/images/bg-nav.png") repeat-x left bottom;
+    border-left: 1px solid #999;
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+    -webkit-border-radius: 3px 3px 0 0; -moz-border-radius: 3px 3px 0 0; border-radius: 3px 3px 0 0;
+    color: #333;
+}
+
+#nav li a.active {
+    border-bottom: 1px solid #fff; background: #fff; color: #333;
+}
+
+#nav li a:hover {
+    background: #fff url("../../paartherapietest/images/bg-nav-hover.png") repeat-x left bottom;
+    text-decoration: none;
+}
+
+#nav li a.active:hover {
+    background: #fff;
+}
+
+#main {
+    background: #eee; border: 1px solid #999; padding: 0; margin: 0;
+    -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+}
+
+#content {
+    background: #fff; padding: 2em; margin: 0 23em 0 0;
+    border-right: 1px solid #999;
+    -webkit-border-radius: 3px 0 0 3px; -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+}
+
+#sidebar {
+    padding: 0; margin: 0 -23em 0 0; width: 19em; float: right;
+}
+
+#content img {
+    display: block; margin: 0 auto;
+}
+
+#content p {
+    text-align: justify;
+}
+
+#sidebar p.group {
+    border-top: 1px solid #999; padding-top: 2em;
+}
+
+#clear {
+    clear: both;
+}
+
+a.button {
+    font-size: 1.143em; width: 11em; height: 2.813em; margin: 0 auto 2.5em;
+    line-height: 1.25em; padding: 0.375em 0 0; color: #fff; font-weight: bold;
+    display: block; text-align: center;
+    -webkit-border-radius: 2em; -moz-border-radius: 2em; border-radius: 2em;
+}
+ 
+a.green {
+    text-shadow: 0 1px 1px #131; border: 1px solid #4d7e03;
+    background: #4d7e03 url("../../paartherapietest/images/button-big.png") repeat-x 0 0;
+}
+
+a.green:hover {
+    background: #6E9A08 url("../../paartherapietest/images/button-big.png") repeat-x 0 -100px;
+    text-decoration: none;
+}
+
+a.orange {
+    text-shadow: 0 1px 1px #310; border: 1px solid #E27001;
+    background: #E27001 url("../images/button-orange-big.png") repeat-x 0 0;
+}
+
+a.orange:hover {
+    background: #FF941B url("../images/button-orange-big.png") repeat-x 0 -100px;
+    text-decoration: none;
+}
+
+/**
+ * Infos
+ */
+ 
+.infos {
+}
+
+.infos div {
+}
+
+.infos a {
+    display: inline-block; margin: 0 auto 0.5em; text-align: center;
+    padding: 0.2em; border: 1px solid #888;
+}
+
+.infos h2 {
+}
+
+.infos h3 {
+}
+
+.infos a.green {
+}
+
+.infos form {
+}
+
+#impress {
+    font-size: .9em; color: #263470; margin-bottom: 3em;
+}
+
+#impress a {
+    color: #263470;
+}
+
+#content h2.center {
+    text-align: center;
+}
+
+#content .imgblock {
+    margin-top: 2.5em; margin-bottom: 2em;
+}
+
+#content .imgblock p {
+    text-align: center; font-size: .857em; font-style: italic; color: #666;
+}
+
+ol, ul {
+    margin-bottom: 1em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+

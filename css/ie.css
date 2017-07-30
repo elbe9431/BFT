@@ -1,0 +1,16 @@
+/**
+ * Berufsfindungstest :: CSS for Internet Explorer
+ *
+ * @version 1.0
+ * @package Berufsfindungstest
+ * @author Carsten Heine <carstenheine@gmx.de>
+ * @copyright 2010 Carsten Heine. All rights reserved.
+ */
+
+iframe {
+    border: none;
+}
+
+.checkboxes input {
+    display: inline;
+}

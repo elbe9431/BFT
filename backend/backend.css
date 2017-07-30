@@ -1,0 +1,76 @@
+/**
+ * paartherapietest :: CSS for backend
+ *
+ * @version 1.0
+ * @package paartherapietest
+ * @author Carsten Heine <carstenheine@gmx.de>
+ * @copyright 2010 Carsten Heine. All rights reserved.
+ */
+
+body    { font: 87.5%/1.429 arial, helvetica, sans-serif; color: #333; }
+th      { text-align: left; }
+label   { display: inline-block; width: 100px; }
+input   { margin-top: 3px; }
+span    { margin-left: 5px; color: #666; }
+.clear  { clear: both; }
+
+.sortable-item {
+    font-size: 0.929em; line-height: 1.308; border: 1px solid #888;
+    margin: 2em; padding: 0.231em 0.385em; width: 12.308em; height: 6.615em; 
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+    float: left;
+}
+
+.sortable-dest {
+    font-size: 0.929em; line-height: 1.308; border: 1px solid #888;
+    margin: 2em; padding: 0.231em 0.385em; width: 15.385em; height: 5.231em;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+    float: left;
+}
+
+.compare-box {
+    float: left; width: 26.5em; height: 22.143em;
+    padding: 1.5em; margin: 2em; overflow: hidden;
+    text-align: center; background: #edfeff; border: 1px solid #91a6af;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+}
+
+.compare-box .top {
+    margin-bottom: 0; color: #666; margin: 0; padding: 0;
+}
+
+.compare-box .headline {
+    height: 2.588em; margin: 0 0 .8em 0; padding: 0;
+    font-size: 17px; line-height: 22px;
+}
+
+.compare-box .text {
+    text-align: left; height: 7.143em;
+}
+
+.compare-box .handle {
+    position: relative; width: 12em; height: 1.571em;
+    padding: .143em 0 .143em 2.929em; margin: 0 auto -.071em auto;
+    border-top: 1px solid #91a6af; z-index: 90;
+    border-left: 1px solid #91a6af; border-right: 1px solid #91a6af;
+    background: #fff url("../../paartherapietest/images/killermouse.png") no-repeat .25em .1em;
+    -webkit-border-radius: 5px 5px 0 0; -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0; cursor: help;
+}
+
+.compare-box .hinweise {
+    position: relative; height: 17.5em; text-align: justify; top: -22em;
+    margin: 0 -.5em; padding: 1em 1.5em; font-size: 0.929em; line-height: 1.385;
+    background: #fff; z-index: 80; border: 1px solid #91a6af;
+    -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;
+    display: none;
+}
+a{
+	text-decoration:none;
+	color:#306;
+	font-weight:bold;
+}
+a:hover{
+	text-decoration:underline;
+}
+

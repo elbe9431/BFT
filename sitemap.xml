@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.paartherapietest.eu/</loc>
+  <priority>1.00</priority>
+
+</url>
+<url>
+  <loc>http://www.paartherapietest.eu/about</loc>
+  <priority>0.80</priority>
+
+</url>
+<url>
+  <loc>http://www.paartherapietest.eu/preview</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.paartherapietest.eu/fragen</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.paartherapietest.eu/kontakt</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.paartherapietest.eu/service</loc>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.paartherapietest.eu/test?id=newTestOrContinueTest</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.paartherapietest.eu/impressum</loc>
+   <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.paartherapietest.eu/test?id=impressum</loc>
+   <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.paartherapietest.eu/test?id=group</loc>
+   <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.paartherapietest.eu/test</loc>
+   <priority>0.64</priority>
+</url>
+</urlset>

@@ -1,0 +1,3 @@
+Require host service.micropayment.de
+Require host proxy.micropayment.de
+Require host access.micropayment.de

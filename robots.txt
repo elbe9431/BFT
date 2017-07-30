@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /api/             # Api Antwortdateien
+Disallow: /api-paypal/      # Api Antwortdateien
+Disallow: /backend/         # Passwortgeschützter Bereich
+Disallow: /fpdf/            # Fpdf Modul
+Disallow: /includes/        # Interne Programmdateien
+Disallow: /js/              # Javascript
+Disallow: /slimbox/         # Slimbox Modul
+Disallow: /templates/       # Interne Templates
+Disallow: /config.php       # Interne Programmdatei
+Disallow: /lang.php         # Interne Programmdatei
+Disallow: /mail.php         # Interne Programmdatei

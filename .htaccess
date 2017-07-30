@@ -1,0 +1,55 @@
+# set the default language
+DefaultLanguage de
+
+# set the default character set
+AddDefaultCharset UTF-8
+
+# disable directory browsing
+Options All -Indexes
+
+
+
+
+RewriteEngine On
+
+# add www to host
+#RewriteCond %{HTTP_HOST} !^www\.paartherapietest\.eu$ [NC]
+#RewriteRule .? http://www.paartherapietest.eu%{REQUEST_URI} [R=301,L]
+
+# redirect about
+RewriteRule ^/?(about/|about.htm|about.html|about.php)$ /about [NC,R=301,L]
+RewriteRule ^/?(about)$ /?content=about [NC,QSA,L]
+
+# redirect preview
+RewriteRule ^/?(preview/|preview.htm|preview.html|preview.php)$ /preview [NC,R=301,L]
+RewriteRule ^/?(preview)$ /?content=preview [NC,QSA,L]
+
+# redirect fragen
+RewriteRule ^/?(fragen/|fragen.htm|fragen.html|fragen.php)$ /fragen [NC,R=301,L]
+RewriteRule ^/?(fragen)$ /?content=fragen [NC,QSA,L]
+
+# redirect kontakt
+RewriteRule ^/?(kontakt/|kontakt.htm|kontakt.html|kontakt.php)$ /kontakt [NC,R=301,L]
+RewriteRule ^/?(kontakt)$ /?content=kontakt [NC,QSA,L]
+
+# redirect impressum
+RewriteRule ^/?(impressum/|impressum.htm|impressum.html|impressum.php)$ /impressum [NC,R=301,L]
+RewriteRule ^/?(impressum)$ /?content=impressum [NC,QSA,L]
+
+# redirect service
+RewriteRule ^/?(service/|service.htm|service.html|service.php)$ /service [NC,R=301,L]
+RewriteRule ^/?(service)$ /?content=service [NC,QSA,L]
+
+# redirect schulen
+RewriteRule ^/?(schulen/|schulen.htm|schulen.html|schulen.php)$ /schulen [NC,R=301,L]
+RewriteRule ^/?(schulen)$ /?content=schulen [NC,QSA,L]
+
+# redirect test
+RewriteRule ^/?(test/|test.htm|test.html|test.php)$ /test [NC,R=301,L]
+RewriteRule ^/?(test)$ /?content=test [NC,QSA,L]
+
+# redirect logout
+RewriteRule ^/?logout/([0-9]+)$ /?content=logout&id=$1 [NC,QSA,L]
+
+# redirect register links
+RewriteRule ^/?reg/(.+)$ /?content=reg&id=$1 [NC,QSA,L]

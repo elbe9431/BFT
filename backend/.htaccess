@@ -1,0 +1,5 @@
+# password-protect the directory in which this htaccess rule resides
+AuthType basic
+AuthName "Backend"
+AuthUserFile /kunden/homepages/11/d30956044/htdocs/paartherapietest/.htpasswd
+Require valid-user

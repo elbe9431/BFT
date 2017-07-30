@@ -1,0 +1,20 @@
+﻿/**
+ * Berufsfindungstest :: CSS for print output
+ *
+ * @version 1.0
+ * @package Berufsfindungstest
+ * @author Carsten Heine <carstenheine@gmx.de>
+ * @copyright 2010 Carsten Heine. All rights reserved.
+ */
+
+ body { font-size: 16px; font-family: arial, helvetica, sans-serif; }
+.screen { display: none; }
+#reset, #header, #distance, #box, #debug, pre {display: none; }
+td, th { text-align: left; padding: 2px 4px; color: black; }
+table { border-left: 1px solid grey; border-top: 1px solid grey; }
+td, th { border-right: 1px solid grey; border-bottom: 1px solid grey; }
+table { width: 100%; }
+.page-break-before { page-break-before: always; }
+.username {  }
+h2 {  }
+hr { clear: both; }
